@@ -1,0 +1,60 @@
+.planner{
+    display: flex;
+}
+.planner__invisible{
+    border: none;
+}
+.planner__title{
+    align-items: flex-start;
+    text-align: center;
+}
+/* .planner__prev-week{
+    justify-content: flex-start;
+}
+.planner__next-week{
+    justify-content: flex-end;
+} */
+table {
+
+    border: 3px solid grey;
+    border-top: 3px solid grey;
+}
+
+td,th {
+    border: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+}
+tr {
+    border: 1px solid grey;
+}
+.planner__blacklog {
+    align-items: center;
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+.planner__task {
+
+    
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+/* pop-up window */
+.planner__task:hover::after{
+    content:attr(data-title);
+    
+    position: absolute;
+    top:0%;
+    left: 30px;
+    
+    z-index: 1;
+
+    background: rgba(255,255,230,0.9);
+
+    font-family: fantasy, sans-serif;
+    font-size: 20px;
+
+    padding: 1px 1px;
+    border: 1px solid #333;
+}
+ 
